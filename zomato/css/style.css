@@ -1,0 +1,154 @@
+/* om sai ram */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: var(--bg-clr);
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* ------------------------------custom css----------------------------------- */
+
+:root {
+    --btn-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --bg-clr: #f9fafc;
+    --font: #293462;
+}
+
+
+/* -----------------------------------------nav-bar styling----------------------------------------- */
+
+.nav_bar {
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
+    position: fixed;
+}
+
+.logo {
+    height: 5rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* button */
+
+.obutton {
+    padding: 1.3rem;
+    margin: 1rem 2rem 1rem 1rem;
+    font-size: larger;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: larger;
+    cursor: pointer;
+}
+
+
+/* -----------------------------------hero section------------------------------- */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+}
+
+
+/* ------------------------------left-content------------------------------- */
+
+.left-cont {
+    width: 55%;
+    height: 90vh;
+    position: relative;
+    /* background-color: yellow; */
+}
+
+.para {
+    position: absolute;
+    font-size: 2.7rem;
+    top: 35%;
+    left: 10%;
+    font-weight: bolder;
+    color: var(--font);
+}
+
+.content-btn {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.hero-button {
+    padding: 1.4rem;
+    font-size: larger;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: larger;
+    cursor: pointer;
+}
+
+
+/* -----------------------------------------right-content----------------------------------------------- */
+
+.right-content {
+    width: 45%;
+    height: 90vh;
+    margin-top: 7rem;
+    /* background-color: green; */
+}
+
+.two-img {
+    margin: 1rem 2rem;
+    width: 36rem;
+    height: 41rem;
+    /* background-color: red; */
+    position: relative;
+}
+
+.img-1 {
+    position: absolute;
+    left: 1rem;
+}
+
+.img-2 {
+    position: absolute;
+    top: 3rem;
+}
+
+.img-3 {
+    position: absolute;
+    width: 37rem;
+    height: 30rem;
+    top: 3rem;
+    box-shadow: var(--btn-shadow);
+}
+
+
+/* ----------------------------------------------- 2-nd page ---------------------------------------------- */
+
+
+/* ------------------------------------pop-up style------------------------------------- */
+
+.page-2 {
+    height: 3rem;
+    width: 9rem;
+    background-color: green;
+}
