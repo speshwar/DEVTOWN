@@ -26,7 +26,7 @@ body {
 
 .nav_bar {
     width: 100%;
-    height: 5.5rem;
+    height: 5.3rem;
     display: flex;
     justify-content: space-between;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -35,7 +35,8 @@ body {
 }
 
 .logo {
-    height: 5rem;
+    height: 5.3rem;
+    width: 10rem;
     margin-bottom: 2rem;
     margin-left: 2rem;
 }
@@ -66,7 +67,6 @@ body {
 .hero-section {
     display: flex;
     justify-content: space-between;
-    margin-top: 0.8rem;
 }
 
 
@@ -82,7 +82,7 @@ body {
 .para {
     position: absolute;
     font-size: 2.7rem;
-    top: 35%;
+    top: 55%;
     left: 10%;
     font-weight: bolder;
     color: var(--font);
@@ -90,7 +90,7 @@ body {
 
 .content-btn {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 10%;
 }
 
