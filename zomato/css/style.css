@@ -1,5 +1,10 @@
 /* om sai ram */
 
+
+/* import */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Merriweather:wght@300&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Merriweather:wght@300;700&family=Poppins:wght@500&display=swap');
 * {
     padding: 0px;
     margin: 0px;
@@ -18,7 +23,9 @@ body {
 :root {
     --btn-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --bg-clr: #f9fafc;
-    --font: #293462;
+    --font-clr: #293462;
+    --fam: 'Merriweather', serif;
+    --fam-head: 'Merriweather', serif;
 }
 
 
@@ -85,7 +92,7 @@ body {
     top: 55%;
     left: 10%;
     font-weight: bolder;
-    color: var(--font);
+    color: var(--font-clr);
 }
 
 .content-btn {
@@ -123,17 +130,17 @@ body {
     position: relative;
 }
 
-.img-1 {
+.images-1 {
     position: absolute;
     left: 1rem;
 }
 
-.img-2 {
+.images-2 {
     position: absolute;
     top: 3rem;
 }
 
-.img-3 {
+.images-3 {
     position: absolute;
     width: 37rem;
     height: 30rem;
@@ -147,8 +154,404 @@ body {
 
 /* ------------------------------------pop-up style------------------------------------- */
 
-.page-2 {
-    height: 3rem;
-    width: 9rem;
+
+/* .page-2 {
+    width: 100%;
+    height: 400rem;
+    background-color: #293462;
+} */
+
+.second-top {
+    height: 14rem;
+    width: 70rem;
+    /* background-color: yellow; (testing parent purpose)*/
+    margin-left: 15rem;
+    position: relative;
+    display: flex;
+    overflow-y: hidden;
+}
+
+.pop-up {
+    height: 14rem;
+    width: 22.5rem;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    position: absolute;
+    left: 36%;
+    top: 1rem;
+}
+
+.vdo {
+    position: absolute;
+    left: 35%;
+}
+
+.pop-up-para {
+    height: 1.5rem;
+    width: 100%;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.pop-up-para p {
+    color: var(--font-clr);
+    font-size: larger;
+    font-family: var(--fam);
+    font-weight: 700;
+    width: 64rem;
+    position: absolute;
+    left: 11rem;
+}
+
+
+/* -------------------------------------menu-bar------------------------------------ */
+
+.parent-menu {
+    width: 100%;
+    height: 47rem;
+    /* background-color: #dd2476; */
+    position: relative;
+    display: flex;
+}
+
+.menu {
+    width: 85rem;
+    height: 40rem;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    margin: 3.5rem 5.4rem;
+    transform: skew(0, -4deg);
+    position: relative;
+}
+
+.menu-heading {
+    position: absolute;
+    margin-top: 1.8rem;
+    margin-left: 37rem;
+    font-family: var(--fam-head);
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--font-clr);
+    background-color: transparent;
+}
+
+
+/* -------------------------------menu-bar---------------------------------------------- */
+
+.menu1 {
+    height: 30rem;
+    width: 25rem;
+    /* background-color: yellow; */
+    position: absolute;
+    /* margin-left: 8rem;
+    margin-top: 8rem; */
+    left: 7rem;
+    top: 8rem;
+    border-radius: 15px;
+}
+
+.menu2 {
+    height: 32rem;
+    width: 27.5rem;
+    /* background-color: blue; */
+    position: absolute;
+    /* margin-top: 6.3rem;
+    margin-left: 34.5rem; */
+    top: 6.3rem;
+    left: 34.5rem;
+    border-radius: 15px;
+}
+
+.menu3 {
+    height: 30rem;
+    width: 24rem;
+    /* margin-left: 64rem;
+    margin-top: 8rem; */
+    left: 64rem;
+    top: 8rem;
+    border-radius: 15px;
+    /* background-color: green; */
+    position: absolute;
+}
+
+
+/* -------------------------------content-styliong------------------------ */
+
+.img-1 {
+    width: 25rem;
+    height: 24rem;
+    border-radius: 15px 15px 0px 0px;
+    position: absolute;
+    left: 0rem;
+}
+
+.img-2 {
+    width: 27.5rem;
+    height: 27rem;
+    border-radius: 15px 15px 0px 0px;
+    top: 0rem;
+    position: absolute;
+}
+
+.img-3 {
+    width: 24rem;
+    height: 24rem;
+    border-radius: 15px 15px 0px 0px;
+    top: 0rem;
+    position: absolute;
+}
+
+.cmenu1 {
+    position: absolute;
+    top: 24rem;
+    font-family: var(--fam-head);
+    width: 100%;
+    height: 6rem;
+    border-radius: 0px 0px 15px 15px;
+    padding: 1.3rem;
+}
+
+.cmenu2 {
+    position: absolute;
+    top: 27rem;
+    height: 5rem;
+    width: 100%;
+    border-radius: 10px 0px 15px 15px;
+    padding: 1.3rem;
+    font-family: var(--fam-head);
+}
+
+.cmenu3 {
+    position: absolute;
+    top: 24rem;
+    height: 6rem;
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+    padding: 1.3rem;
+    font-family: var(--fam-head);
+}
+
+
+/* -----------------menu-btn--------------------------- */
+
+.menu-btn {
+    position: absolute;
+    left: 42%;
+    top: 84%;
+    height: 3.5rem;
+    width: 9.5rem;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.second-page-span-1 {
+    color: red;
+    display: block;
+}
+
+.second-page-span-2 {
+    color: red;
+}
+
+
+/* ------------------------------------------------------------------3rd page------------------------------------------ */
+
+.third-page {
+    width: 100%;
+    height: 59rem;
+    /* background-color: red; */
+    display: flex;
+    position: relative;
+    /* padding: 3rem; */
+    padding: 0rem 5rem;
+}
+
+
+/* -------------------------3rd page left content------------------------------ */
+
+.left-third-page {
+    height: 25rem;
+    width: 45rem;
+    /* background-color: yellow; */
+    position: absolute;
+    left: 5rem;
+}
+
+.third-left-para {
+    color: var(--font-clr);
+    font-size: 2.4rem;
+    font-weight: 600;
+    position: absolute;
+    top: 25%;
+    left: 2rem;
+    font-family: var(--fam-head);
+}
+
+
+/* -------------------------3rd page right content------------------------------ */
+
+.right-third-page {
+    position: absolute;
+    height: 25rem;
+    width: 45rem;
+    right: 5rem;
+}
+
+
+/* ---------------------------3rd page bottom------------------------------------- */
+
+.third-page-bottom {
+    height: 34rem;
+    width: 100%;
+    /* background-color: green; */
+    position: relative;
+    margin-top: 25rem;
+}
+
+.third-page-heading {
+    font-family: var(--fam);
+    font-weight: 600;
+    color: var(--font-clr);
+    position: absolute;
+    font-size: 2.2rem;
+    top: 0rem;
+    left: 27rem;
+}
+
+.input-box {
+    position: absolute;
+    top: 0.5rem;
+    width: 22.5rem;
+    height: 2.5rem;
+    border: rgb(233, 188, 143) solid 2px;
+    background-color: rgb(250, 220, 189);
+    left: 27rem;
+    top: 1.1rem;
+}
+
+.update-btn {
+    position: absolute;
+    top: 0.5rem;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    padding: 1rem;
+    color: #fff;
+    height: 4.5rem;
+    border-radius: 8px;
+    width: 10rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    left: 50rem;
+    top: 0rem;
+}
+
+.botton-search-bar {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 8rem;
+    margin-top: 3rem;
+    /* background-color: peru; */
+}
+
+.third-page-image-div {
+    width: 74rem;
+    height: 19rem;
+    position: relative;
+    margin-top: 15rem;
+    margin: 0rem 4rem;
+    border-radius: 15px;
+}
+
+.third-page-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    /* top: 15rem;
+    left: 6rem;
+    right: 6rem;
+    position: absolute;  */
+}
+
+.above-img-para {
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    font-family: var(--fam-head);
+    font-size: 1.9rem;
+    color: #fff;
+    background-color: transparent;
+    margin: 2rem;
+}
+
+.third-page-image-span {
+    position: absolute;
+    left: 32rem;
+    display: block;
+    background-color: transparent;
+}
+
+
+/* -------------------------------------------------------foot-path------------------------------------- */
+
+.footer-path {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+}
+
+.left-footer {
+    width: 50%;
+    height: auto;
     background-color: green;
+    position: absolute;
+    left: 0px;
+}
+
+.logo-heading {
+    position: absolute;
+    top: 3rem;
+    left: 30rem;
+    color: #fff;
+    background: transparent;
+}
+
+.logo-heading i {
+    background: transparent;
+    transform: skew(0, 2deg);
+    font-size: 3rem;
+    font-weight: 7rem;
+}
+
+.right-footer {
+    width: 40rem;
+    margin-left: 50rem;
+    height: auto;
+    position: absolute;
+    background-color: transparent;
+}
+
+.right-footer ul li {
+    margin: 0.5rem;
+    background: transparent;
+    color: #fff;
+}
+
+.right-footer ul li a {
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--fam-head);
+    font-weight: 3rem;
+}
+
+.right-footer ul {
+    background: transparent;
+    margin-left: 10rem;
 }
