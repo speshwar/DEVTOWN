@@ -1,5 +1,3 @@
-/* om sai ram */
-
 
 /* import */
 
@@ -27,6 +25,7 @@ body {
     --fam: 'Merriweather', serif;
     --fam-head: 'Merriweather', serif;
 }
+
 
 /* -----------------------------------------nav-bar styling----------------------------------------- */
 
@@ -396,7 +395,67 @@ body {
     height: 25rem;
     width: 45rem;
     right: 5rem;
+    background-color: #293462;
 }
+
+.img-layout-1 {
+    height: 12.5rem;
+    width: 45rem;
+    display: flex;
+    /* background-color: yellow; */
+    position: relative;
+}
+
+.img-layout-2 {
+    height: 12.5rem;
+    width: 45rem;
+    display: flex;
+    /* background-color: palevioletred; */
+    position: relative;
+}
+
+.res-1 {
+    position: absolute;
+    height: 8.5rem;
+    width: 19rem;
+    left: 2rem;
+    bottom: 3px;
+}
+
+.res-2 {
+    position: absolute;
+    height: 11.5rem;
+    width: 21rem;
+    right: 2.7rem;
+    bottom: 3px;
+}
+
+.res-3 {
+    position: absolute;
+    height: 11.5rem;
+    width: 21rem;
+    /* top: 3px; */
+    left: 2rem;
+}
+
+.res-4 {
+    position: absolute;
+    height: 8.5rem;
+    width: 19rem;
+    right: 2.7rem;
+    /* top: 3px; */
+}
+
+
+/* .grid-layout {
+    height: 25rem;
+    width: 45rem;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    background-color: yellow;
+    margin-left: 300rem;
+} */
 
 
 /* ---------------------------3rd page bottom------------------------------------- */
@@ -414,7 +473,7 @@ body {
     font-weight: 600;
     color: var(--font-clr);
     position: absolute;
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     top: 0rem;
     left: 27rem;
 }
@@ -526,6 +585,7 @@ body {
     transform: skew(0, 2deg);
     font-size: 3rem;
     font-weight: 7rem;
+    /* font-family: var(--fam-head); */
 }
 
 .right-footer {
